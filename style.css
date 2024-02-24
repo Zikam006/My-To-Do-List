@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    min-height: 700px;
+    padding: 20px;
+    background: linear-gradient(20deg, rgb(47, 46, 46), rgb(198, 0, 99))
+}
+.container{
+   width: 100%;
+   min-height: 200px;
+   max-width: 600px;
+   background-color: #fff;
+   margin: 100px auto 20px;
+   padding: 50px, 30px, 75px ;
+   border-radius: 10px;
+   transform: translateY(4vh);
+}
+h1{
+    align-items: center;
+    font-size: 30px;
+    margin: 0px 15px 30px;
+    padding: 25px 30px 0px;
+}
+.myTaskInput{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fddaea;
+    padding-left: 30px;
+    margin: 40px 20px;
+    border-radius: 30px;
+    max-width: 450px;
+    margin-bottom: 25px;
+ }
+input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    background: transparent;
+    font-size: 18px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    background-color: rgb(255, 28, 141);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+button:hover{
+    background-color: rgb(255, 0, 128);
+}
+#taskContainer{
+    margin: 30px auto;
+    width: 100%;
+    max-width: 500px;
+}
+  ul li{
+    list-style-type: none;
+   width: 100%;
+   padding: 5px;
+   cursor: pointer;
+} 
+
+#taskContainer li label{
+    display: flex;
+    align-items: center;
+     padding: 15px; 
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+ul li span{
+    font-size: 14px;
+    font-weight: 100;
+    position: absolute; 
+    top: 20; 
+    right: 150px;
+    color: rgb(168, 2, 2);
+    cursor: pointer;
+    }
+    ul li span:hover{
+       color: red;
+       
+    }
+    #taskContainer li.label-show::after{
+        display: inline;
+    }
+    input[type="checkbox"]{
+        display: none;
+      } 
+    ul li.task1{
+       color: #42a9e0;
+       text-decoration: line-through;
+      }
+      
